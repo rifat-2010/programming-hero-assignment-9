@@ -5,6 +5,9 @@ import HomePage from "../pages/HomePage";
 import MainLayout from "../layouts/MainLayout";
 import AboutUs from "../pages/AboutUs";
 import Profile from "../pages/Profile";
+import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
+
 
 
 export const router = createBrowserRouter([
@@ -15,6 +18,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+        loader: () => fetch("/data.json"),
       },
       {
         path:'/about-us',
@@ -22,11 +26,15 @@ export const router = createBrowserRouter([
       },
       {
         path: '/profile',
-       element: <Profile></Profile>
+       element: <Profile></Profile>,
       },
       {
-        path: '/profile',
-       element: <Profile></Profile>
+        path: '/signIn-page',
+       element: <SignIn></SignIn>,
+      },
+      {
+        path: '/signUp-page',
+       element: <SignUp></SignUp>,
       },
     ],
   },

@@ -4,6 +4,7 @@ import PopularToySection from "../components/PopularToySection";
 import MostWantedProducts from "../components/MostWantedProducts";
 import BannerSection from "../components/BannerSection";
 import AboutSection from "../components/AboutSection";
+import SpecialCategories from "../components/SpecialCategories";
 
 const HomePage = () => {
   const kidsData = useLoaderData();
@@ -24,9 +25,12 @@ const HomePage = () => {
 
       {/*Home > Banner Section */}
       <BannerSection />
-      {/*HOme > About section */}
+
+      {/* Home > Special Categories */}
+      <SpecialCategories />
+
+      {/*Home > About section */}
       <AboutSection />
-      
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const BannerSection = () => {
   return (
-    <div className="relative py-20 ">
+    <div className="relative py-20 mt-[20px]">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"

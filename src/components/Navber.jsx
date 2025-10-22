@@ -69,7 +69,7 @@ const handleSignout = () => {
   
 
   {/* <p className="text-white/80">{user?.email}</p> */}
-{/* <h2 className="text-black text-xl font-semibold">{user?.displayName}</h2> */}
+<h2 className="text-black text-xl font-semibold">{user?.displayName}</h2>
 <p className=" font-black">{user?.email}</p>
 
   <button onClick={handleSignout} className="my-btn">

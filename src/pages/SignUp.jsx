@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { auth } from "../firebase/firebase.config";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
+import { AuthContext } from "../context/AuthContext";
 
 const googlePovider = new GoogleAuthProvider();
 
 const SignUp = () => {
   const [show, setShow] = useState(false);
+  const {setUser} = use(AuthContext);
+
+
+
   const handleSignup = (e) => {
     e.preventDefault();
     const email = e.target.email?.value;
@@ -38,7 +43,14 @@ if (!regExp.test(password)) {
         })
            .then((res) => {
                 console.log(res);
-        toast.success("Signup successful");
+      
+        signOut(auth)
+            .then(() => {
+         
+              toast.success("Signup successful");
+                    setUser(null);
+                    navigate('/signIn-page')
+            })
     })
     .catch((err) => {
       toast.error(err.message);

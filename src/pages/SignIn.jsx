@@ -1,10 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link } from "react-router";
+import { Link, Navigate, useLocation, useNavigate } from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { toast } from "react-toastify";
-import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { AuthContext } from "../context/AuthContext";
 
 
 const googlePovider = new GoogleAuthProvider();
@@ -12,9 +13,15 @@ const googlePovider = new GoogleAuthProvider();
 
 const SignIn = () => {
   const [show, setShow] = useState(false);
-  const [user, setUser] = useState(null);
+  const {user, setUser } = useContext(AuthContext);
+console.log(user)
+  const location = useLocation();
+  const from = location.state || '/';
+  const navigate = useNavigate();
 
   const emailRefHuk = useRef(null)
+
+
 
   // SignIn function
   const handleSignin = (e) => {
@@ -29,6 +36,7 @@ const SignIn = () => {
         console.log(res);
         setUser(res.user)
         toast.success("Signup successful");
+        navigate(from);
       })
       .catch((e) => {
         toast.error(e.message);
@@ -36,17 +44,7 @@ const SignIn = () => {
   };
 
 
-// signOut function
-const handleSignout = () => {
-  signOut(auth)
-    .then(() => {
-      setUser(null); 
-      toast.success("Sign Out successful");
-    })
-    .catch((err) => {
-      toast.error(err.message);
-    });
-};
+
 
 
 // GoogleSignIn function
@@ -56,6 +54,7 @@ const handleGoogleSignIn = () => {
       // setUser(null); 
       setUser(res.user)
       toast.success("GoogleSignIn successful");
+      navigate(from);
     })
     .catch((err) => {
       toast.error(err.message);
@@ -80,7 +79,7 @@ const handleGoogleSignIn = () => {
     .catch((err) => {
       toast.error(err.message);
     });
-};
+}; 
 
 
 console.log(user)
@@ -91,25 +90,11 @@ console.log(user)
       <title>SignIn-Page</title>
 
       <div className="w-full max-w-md backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl rounded-2xl p-8">
-        { user ? 
-        
-    (<div className="text-center space-y-3">
-  <img
-    src={user?.photoURL || "https://via.placeholder.com/88"}
-    className="h-20 w-20 rounded-full mx-auto"
-    alt=""
-  />
-
-  <h2 className="text-xl font-semibold">{user?.displayName}</h2>
-  <p className="text-white/80">{user?.email}</p>
-  <button onClick={handleSignout} className="my-btn">
-    Sign Out
-  </button>
-</div>) :  
+       
 
 
 
-(<form onSubmit={handleSignin} className="space-y-5">
+<form onSubmit={handleSignin} className="space-y-5">
             <h2 className="text-2xl font-semibold mb-2 text-center text-white">
               LogIn Page
             </h2>
@@ -194,7 +179,7 @@ console.log(user)
                 Sign up
               </Link>
             </p>
-      </form>)}
+      </form>
 
 
       </div>

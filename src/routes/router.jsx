@@ -10,6 +10,7 @@ import SignUp from "../pages/SignUp";
 import ToyDetailsPage from "../pages/ToyDetailsPage";
 import Loading from "../components/Loading";
 import ErrorPage from "../pages/ErrorPage";
+import PrivateRoute from "../privateRoute/PrivateRoute";
 
 
 
@@ -43,8 +44,7 @@ export const router = createBrowserRouter([
       },
       {
       path: '/toy-Details-page/:id',
-      // path: '/toy-Details-page',
-       element: <ToyDetailsPage></ToyDetailsPage>,
+       element: <PrivateRoute><ToyDetailsPage/></PrivateRoute> ,
        loader: () => fetch("/data.json"),
       },
     ],

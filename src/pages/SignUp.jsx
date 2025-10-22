@@ -1,7 +1,7 @@
 import React, { use, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link, useNavigate } from "react-router";
+import { Link} from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
@@ -49,7 +49,7 @@ if (!regExp.test(password)) {
          
               toast.success("Signup successful");
                     setUser(null);
-                    navigate('/signIn-page')
+                    // useNavigate('/signIn-page')
             })
     })
     .catch((err) => {

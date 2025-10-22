@@ -41,7 +41,7 @@ const handleSignout = () => {
           </li>
           
             <li>
-              <NavLink to={"/profile"}>Profile</NavLink>
+              <NavLink to={"/blog-page"}>Blog</NavLink>
             </li>
             
           

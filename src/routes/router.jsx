@@ -4,12 +4,12 @@ import { createBrowserRouter } from "react-router";
 import HomePage from "../pages/HomePage";
 import MainLayout from "../layouts/MainLayout";
 import AboutUs from "../pages/AboutUs";
-import Profile from "../pages/Profile";
 import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 import ToyDetailsPage from "../pages/ToyDetailsPage";
 import Loading from "../components/Loading";
 import ErrorPage from "../pages/ErrorPage";
+import BlogPage from "../pages/BlogPage";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 
 
@@ -31,8 +31,12 @@ export const router = createBrowserRouter([
        element: <AboutUs></AboutUs>,
       },
       {
-        path: '/profile',
-       element: <Profile></Profile>,
+        path: '/blog-page',
+       element: <BlogPage></BlogPage>,
+      },
+      {
+        path: '/blog',
+        element: <BlogPage />,
       },
       {
         path: '/signIn-page',

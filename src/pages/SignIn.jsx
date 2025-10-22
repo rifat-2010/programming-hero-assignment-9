@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { toast } from "react-toastify";
-import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 
 const googlePovider = new GoogleAuthProvider();
@@ -13,6 +13,8 @@ const googlePovider = new GoogleAuthProvider();
 const SignIn = () => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState(null);
+
+  const emailRefHuk = useRef(null)
 
   // SignIn function
   const handleSignin = (e) => {
@@ -62,6 +64,25 @@ const handleGoogleSignIn = () => {
 
 
 
+// reset password - clicked by forget password text
+ const handleForgetPassword = () => {
+  const email = emailRefHuk.current.value;
+
+  if (!email) {
+    toast.error("Please enter your email first!");
+    return;
+  }
+
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      toast.success("Check your email to reset your password!");
+    })
+    .catch((err) => {
+      toast.error(err.message);
+    });
+};
+
+
 console.log(user)
 
   return (
@@ -100,6 +121,7 @@ console.log(user)
               <input
                 type="email"
                 name="email"
+                ref={emailRefHuk}
                 // value={email}
                 // onChange={(e) => setEmail(e.target.value)}
                 placeholder="example@email.com"
@@ -126,6 +148,7 @@ console.log(user)
             </div>
 
             <button
+            onClick={handleForgetPassword}
               className="hover:underline cursor-pointer hover:text-white
                   font-semibold"
               type="button"

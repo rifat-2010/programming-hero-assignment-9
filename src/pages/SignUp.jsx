@@ -3,7 +3,7 @@ import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router";
 import { auth } from "../firebase/firebase.config";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 
 const googlePovider = new GoogleAuthProvider();
@@ -14,7 +14,9 @@ const SignUp = () => {
     e.preventDefault();
     const email = e.target.email?.value;
     const password = e.target.password?.value;
-        // console.log({ email, password });
+    const displayName = e.target.name?.value;
+    const photoURL = e.target.photo?.value;
+        console.log({ email, password, displayName, photoURL });
 
 
   // Regex for validation: at least 1 uppercase, 1 lowercase, min length 6
@@ -30,8 +32,18 @@ if (!regExp.test(password)) {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {
-        console.log(res);
+        updateProfile(res.user, {
+          displayName, 
+          photoURL,
+        })
+           .then((res) => {
+                console.log(res);
         toast.success("Signup successful");
+    })
+    .catch((err) => {
+      toast.error(err.message);
+    });
+    
       })
       .catch((e) => {
         toast.error(e.message);
@@ -71,7 +83,7 @@ const handleGoogleSignIn = () => {
             <input
               type="text"
               name="name"
-              placeholder="Habib utsho"
+              placeholder="Your Name"
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
           </div>

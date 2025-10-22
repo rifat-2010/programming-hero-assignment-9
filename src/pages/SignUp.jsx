@@ -3,8 +3,10 @@ import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
 import { Link } from "react-router";
 import { auth } from "../firebase/firebase.config";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { toast } from "react-toastify";
+
+const googlePovider = new GoogleAuthProvider();
 
 const SignUp = () => {
   const [show, setShow] = useState(false);
@@ -12,7 +14,19 @@ const SignUp = () => {
     e.preventDefault();
     const email = e.target.email?.value;
     const password = e.target.password?.value;
-    console.log({ email, password });
+        // console.log({ email, password });
+
+
+  // Regex for validation: at least 1 uppercase, 1 lowercase, min length 6
+const regExp = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
+if (!regExp.test(password)) {
+  toast.error(
+    "Password must be at least 6 characters long and include at least one uppercase and one lowercase letter"
+  );
+  return;
+}
+
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {
@@ -25,11 +39,25 @@ const SignUp = () => {
   };
 
 
-
+// GoogleSignIn function
+const handleGoogleSignIn = () => {
+  signInWithPopup(auth, googlePovider)
+   .then(() => {
+      // setUser(null); 
+      toast.success("GoogleSignIn successful");
+    })
+    .catch((err) => {
+      toast.error(err.message);
+    });
+}
 
 
   return (
     <div className="min-h-[calc(100vh-20px)] flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-600 relative overflow-hidden">
+           {/* page title */}
+      <title>SignUp-Page</title>
+
+
       <div className="w-full max-w-md backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl rounded-2xl p-8">
         <h2 className="text-2xl font-semibold mb-6 text-center text-white">
           Sign Up
@@ -47,19 +75,8 @@ const SignUp = () => {
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
           </div>
-          <div>
-            <label className="block text-sm m mb-1 text-white font-bold text-[17px]">
-              Photo
-            </label>
-            <input
-              type="text"
-              name="photo"
-              placeholder="Your photo URL here"
-              className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
-            />
-          </div>
 
-          <div>
+             <div>
             <label className="block text-sm mb-1 text-white font-bold text-[17px]">
               Email
             </label>
@@ -70,6 +87,20 @@ const SignUp = () => {
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
           </div>
+
+          <div>
+            <label className="block text-sm m mb-1 text-white font-bold text-[17px]">
+              Photo URL
+            </label>
+            <input
+              type="text"
+              name="photo"
+              placeholder="Your photo URL here"
+              className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+          </div>
+
+       
 
           <div className="relative">
             <label className="block text-sm mb-1 text-white font-bold text-[17px]">
@@ -104,6 +135,27 @@ const SignUp = () => {
               </Link>
             </p>
           </div>
+          
+          {/* Divider */}
+          <div className="flex items-center justify-center gap-2 my-2">
+            <div className="h-px w-16 bg-white/30"></div>
+            <span className="text-sm text-white/70">or</span>
+            <div className="h-px w-16 bg-white/30"></div>
+          </div>
+
+          {/* Google Signin */}
+          <button
+          onClick={handleGoogleSignIn}
+            type="button"
+            className="flex items-center justify-center gap-3 bg-white text-gray-800 px-5 py-2 rounded-lg w-full font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
+          >
+            <img
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              alt="google"
+              className="w-5 h-5"
+            />
+            Continue with Google
+          </button>
         </form>
       </div>
     </div>

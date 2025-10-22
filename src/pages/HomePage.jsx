@@ -11,6 +11,8 @@ const HomePage = () => {
 
   return (
     <div className="bg-white">
+      {/* page title */}
+      <title>Home-Page</title>
       {/* Home > hero section */}
       <HomeHeroSection />
 

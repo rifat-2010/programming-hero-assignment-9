@@ -23,16 +23,7 @@ const HomeHeroSection = () => {
             </p>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+               <div>⭐⭐⭐⭐⭐</div>
                 <span className="ml-2 text-gray-600 text-sm">
                   (2.5k+ Reviews)
                 </span>
@@ -50,27 +41,91 @@ const HomeHeroSection = () => {
 
           {/* Right Side Images */}
           <div className="md:w-1/2 relative mt-10 md:mt-0">
-            <div className="h-[400px] grid grid-cols-3 gap-4">
-              <img
-                src="https://sardarjitoy.com/cdn/shop/files/sardarjitoy.com_1.png?v=1725167917"
-                alt="Educational Toy"
-                className="rounded-xl shadow-lg w-full h-full object-cover hover:shadow-xl transition duration-300"
-              />
-              <img
-                src="https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/image_17391781381184.jpeg"
-                alt="Fun Toy"
-                className="rounded-xl shadow-lg w-full h-full object-cover hover:shadow-xl transition duration-300"
-              />
-              <img
-                src="https://i.pinimg.com/736x/72/0c/74/720c7457a6af70a649613d4b7b549994.jpg"
-                alt="Creative Toy"
-                className="rounded-xl shadow-lg w-full h-full object-cover hover:shadow-xl transition duration-300"
-              />
-            </div>
-            <div className="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-lg shadow-lg">
-              <p className="text-emerald-500 font-semibold">Featured Items</p>
-            </div>
-          </div>
+  <div className="carousel w-full h-[400px] rounded-xl overflow-hidden">
+    {/* Slide 1 */}
+    <div id="slide1" className="carousel-item relative w-full">
+      <img
+        src="https://sardarjitoy.com/cdn/shop/files/sardarjitoy.com_1.png?v=1725167917"
+        className="w-full h-full object-cover"
+        alt="Educational Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide6" className="btn btn-circle">❮</a>
+        <a href="#slide2" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    {/* Slide 2 */}
+    <div id="slide2" className="carousel-item relative w-full">
+      <img
+        src="https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/image_17391781381184.jpeg"
+        className="w-full h-full object-cover"
+        alt="Fun Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide1" className="btn btn-circle">❮</a>
+        <a href="#slide3" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    {/* Slide 3 */}
+    <div id="slide3" className="carousel-item relative w-full">
+      <img
+        src="https://i.pinimg.com/736x/72/0c/74/720c7457a6af70a649613d4b7b549994.jpg"
+        className="w-full h-full object-cover"
+        alt="Creative Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide2" className="btn btn-circle">❮</a>
+        <a href="#slide4" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    {/* Slide 4 */}
+    <div id="slide4" className="carousel-item relative w-full">
+      <img
+        src="https://kingoftoys.com.cy/wp-content/uploads/2023/11/875x500_40off_Playmobil.jpg"
+        className="w-full h-full object-cover"
+        alt="Creative Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide3" className="btn btn-circle">❮</a>
+        <a href="#slide5" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    {/* Slide 5 */}
+    <div id="slide5" className="carousel-item relative w-full">
+      <img
+        src="https://img.freepik.com/free-vector/hand-drawn-kids-toys-facebook-cover_23-2149651187.jpg"
+        className="w-full h-full object-cover"
+        alt="Creative Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide4" className="btn btn-circle">❮</a>
+        <a href="#slide6" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    {/* Slide 6 */}
+    <div id="slide6" className="carousel-item relative w-full">
+      <img
+        src="https://elements-resized.envatousercontent.com/elements-video-cover-images/files/462876702/Cover%20Pr.jpg?w=1200&h=630&cf_fit=crop&q=85&format=jpeg&s=86c88e6352bf0fa7dede449eae475df795015eeb0f2b444e33c1a68d844dbc33"
+        className="w-full h-full object-cover"
+        alt="Creative Toy"
+      />
+      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+        <a href="#slide5" className="btn btn-circle">❮</a>
+        <a href="#slide1" className="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-lg shadow-lg">
+    <p className="text-emerald-500 font-semibold">Featured Items</p>
+  </div>
+        </div>
+
         </div>
       </div>
     );

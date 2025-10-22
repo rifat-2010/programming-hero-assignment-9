@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router";
+import { NavLink, useLoaderData } from "react-router";
 
 const MostWantedProducts = () => {
   const kidsData = useLoaderData();
@@ -37,7 +37,7 @@ const MostWantedProducts = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {kidsData?.slice(4, 7).map((toy) => (
+        {kidsData?.slice(7, 10).map((toy) => (
           <div
             key={toy.toyId}
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
@@ -65,7 +65,7 @@ const MostWantedProducts = () => {
                   ${toy.price}
                 </span>
                 <span className="text-sm text-gray-500 line-through">
-                  ${(toy.price * 1.2).toFixed(2)}
+                  ${(toy.price)}
                 </span>
                 <span className="text-sm text-emerald-500 font-medium">
                   20% Off
@@ -76,13 +76,13 @@ const MostWantedProducts = () => {
                 <div className="flex items-center gap-1">
                   <span className="text-yellow-400">⭐</span>
                   <span className="text-sm text-gray-600">
-                    {toy.rating || "4.5"}
+                    {toy.rating}
                   </span>
                 </div>
 
-                <button className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">
-                  Add to Cart
-                </button>
+                <NavLink to={`/toy-Details-page/${toy.toyId}`}  className="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">
+                  View More
+                </NavLink>
               </div>
             </div>
           </div>

@@ -9,7 +9,30 @@
     "availableQuantity": 75,
     "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles.",
     "pictureURL": "https://m.media-amazon.com/images/I/71C-nuAyCPL._AC_SL1095_.jpg",
-    "subCategory": "Building Blocks"
+    "subCategory": "Building Blocks",
+    "longDescription": "This classic Lego bricks set is a gateway to endless imagination, packed with vibrant colors and versatile pieces that spark creativity in children of all ages. Unlike rigid toys that limit play, these bricks allow kids to construct their wildest dreams—be it towering castles, speedy race cars, or bustling cityscapes—fostering problem-solving skills as they experiment with balance, structure, and design. The set's timeless appeal lies in its simplicity; no batteries or screens required, just pure hands-on fun that builds confidence with every snap.\n\nWhat sets this Lego set apart is the freedom it offers for collaborative play. Parents and siblings can join in, turning solo building into family bonding sessions where ideas flow freely and stories unfold through shared creations. The durable, high-quality bricks ensure long-lasting use, resisting wear from enthusiastic play and encouraging reuse in countless projects. Plus, as kids grow, the set adapts—serving as a foundation for more complex builds or even STEM-inspired experiments like simple machines and architecture basics.\n\nIn a world of digital distractions, Lego Classic Bricks stands as a champion of tactile learning, promoting fine motor skills, spatial awareness, and innovative thinking. It's more than a toy; it's a tool for lifelong creativity, helping children discover the joy of making something from nothing. Whether gifted for birthdays or everyday exploration, this set delivers hours of engagement, leaving lasting memories and a love for building that extends far beyond childhood.",
+    "ratings": [
+      {
+        "name": "5 ⭐",
+        "count": 52
+      },
+      {
+        "name": "4 ⭐",
+        "count": 18
+      },
+      {
+        "name": "3 ⭐",
+        "count": 4
+      },
+      {
+        "name": "2 ⭐",
+        "count": 1
+      },
+      {
+        "name": "1 ⭐",
+        "count": 0
+      }
+    ]
   },
   {
     "toyId": 2,
@@ -21,7 +44,30 @@
     "availableQuantity": 40,
     "description": "A luxurious multi-floor Barbie house complete with furniture, lights, and sounds for endless pretend play fun.",
     "pictureURL": "https://m.media-amazon.com/images/I/81gP1TiMH0L._AC_SL1500_.jpg",
-    "subCategory": "Dolls & Accessories"
+    "subCategory": "Dolls & Accessories",
+    "longDescription": "The Barbie Dreamhouse transforms ordinary playtime into a glamorous adventure, featuring multiple floors of stylish rooms filled with interactive furniture, twinkling lights, and playful sounds that bring every story to life. Designed for aspiring young storytellers, this deluxe playset invites kids to role-play everyday scenarios or fantastical tales, from hosting tea parties to planning dream vacations, all while developing social skills and emotional expression through imaginative narratives.\n\nA standout element is the house's modular design, allowing children to rearrange rooms and accessories for fresh layouts each time, ensuring the fun never gets stale. Complete with a working elevator, slide, and voice-activated features, it encourages active movement and quick thinking as kids navigate the space. The attention to detail in the furnishings—from cozy beds to chic kitchens—mirrors real-life homes, helping little ones understand concepts like organization and hospitality in a lighthearted way.\n\nBeyond entertainment, the Barbie Dreamhouse nurtures creativity and independence, empowering children to direct their own doll-world dramas without predefined scripts. It's a perfect blend of luxury and learning, fostering empathy as they explore relationships between characters. Ideal for solo play or gatherings with friends, this iconic toy creates cherished moments that inspire confidence and a sense of wonder, making it a must-have addition to any child's collection.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 5
+      },
+      {
+        "name": "4 ⭐",
+        "count": 15
+      },
+      {
+        "name": "5 ⭐",
+        "count": 41
+      }
+    ]
   },
   {
     "toyId": 3,
@@ -33,7 +79,30 @@
     "availableQuantity": 50,
     "description": "A high-speed track set for Hot Wheels cars with loops, jumps, and a launcher for exciting races.",
     "pictureURL": "https://m.media-amazon.com/images/I/91sEhkHjqnL._AC_SL1500_.jpg",
-    "subCategory": "Cars & Vehicles"
+    "subCategory": "Cars & Vehicles",
+    "longDescription": "Ignite the thrill of speed with the Hot Wheels Super Track Set, a dynamic racing wonderland boasting gravity-defying loops, daring jumps, and a powerful launcher that sends cars zooming at breakneck paces. Tailored for speed-loving kids, this set turns any room into a high-octane racetrack, where strategic track building hones engineering basics and quick decision-making keeps the excitement pulsing with every lap.\n\nThe genius of this track lies in its expandable design, compatible with other Hot Wheels pieces for endless customization—add twists, turns, or multi-lane battles to evolve the course as skills grow. Crash barriers and booster mechanisms add realism and replay value, teaching resilience as little racers recover from spectacular wipeouts and refine their setups for victory. Vibrant colors and sturdy construction make it a durable favorite for indoor or outdoor thrills.\n\nMore than just races, the Super Track Set cultivates teamwork and competition in a fun, safe environment, sparking passions for motorsports and physics alike. It's an adrenaline rush in a box, building hand-eye coordination and spatial planning while delivering non-stop action. Whether competing against siblings or timing solo runs, this toy fuels dreams of the racetrack, creating joyful chaos and triumphant cheers that echo long after playtime ends.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 4
+      },
+      {
+        "name": "4 ⭐",
+        "count": 11
+      },
+      {
+        "name": "5 ⭐",
+        "count": 46
+      }
+    ]
   },
   {
     "toyId": 4,
@@ -45,7 +114,30 @@
     "availableQuantity": 120,
     "description": "A 10-color Play-Doh pack that helps kids express creativity through molding, shaping, and fun art projects.",
     "pictureURL": "https://m.media-amazon.com/images/I/51fSwlLc3FL._AC_SY350_.jpg",
-    "subCategory": "Arts & Crafts"
+    "subCategory": "Arts & Crafts",
+    "longDescription": "Unleash artistic potential with the Play-Doh Creative Pack, a rainbow of 10 vibrant, non-toxic colors that invite kids to squish, shape, and sculpt their imaginations into tangible masterpieces. This versatile set goes beyond basic play, encouraging sensory exploration and fine motor development as little hands knead dough into animals, foods, or abstract wonders, all while boosting self-expression in a mess-free format.\n\nKey to its charm is the inclusion of simple tools like cutters, rollers, and stamps, transforming dough into structured projects that teach cause-and-effect and patience. The pack's generous portions allow for group activities, where friends collaborate on collaborative creations or compete in friendly design challenges, fostering social bonds through shared creativity. Easy cleanup and reusable formula mean more time creating, less time worrying.\n\nAt its core, this Play-Doh pack is a celebration of open-ended art, helping children discover joy in the process rather than perfection, and laying foundations for future artistic pursuits. It's a tactile therapy for growing minds, reducing stress and enhancing focus amid the colorful chaos. Perfect for rainy days or inspired afternoons, it turns everyday moments into galleries of kid-made magic, nurturing innovators one squish at a time.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 5
+      },
+      {
+        "name": "4 ⭐",
+        "count": 42
+      },
+      {
+        "name": "5 ⭐",
+        "count": 14
+      }
+    ]
   },
   {
     "toyId": 5,
@@ -57,7 +149,30 @@
     "availableQuantity": 100,
     "description": "A soft and cuddly teddy bear made of premium plush material — perfect for hugging and gifting.",
     "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxH_yZ21vunEY4E84WEB6qRDoccejT44ZYAg&s",
-    "subCategory": "Stuffed Toys"
+    "subCategory": "Stuffed Toys",
+    "longDescription": "Wrap your arms around the ultimate comforter with this Teddy Bear Plush, crafted from ultra-soft, hypoallergenic fabric that feels like a warm hug from an old friend. Ideal for bedtime snuggles or daytime adventures, this bear's endearing stitched smile and floppy ears provide instant emotional support, helping children navigate feelings of comfort and security in a gentle, reassuring way.\n\nExceptional in its thoughtful design, the bear features reinforced seams for rugged play and a subtle heart-shaped patch on its paw, adding a personal touch that makes it a cherished keepsake. Machine-washable and built to last through countless wash cycles, it's as practical as it is lovable, ensuring it remains a constant companion from toddlerhood to treasured heirloom. Subtle details like embroidered eyes prevent small part hazards, prioritizing safety without sacrificing charm.\n\nThis teddy isn't just a toy—it's a silent storyteller of lullabies and secrets, promoting empathy and imaginative play as kids whisper dreams or stage puppet shows. In an age of fleeting gadgets, it embodies timeless companionship, easing transitions like naps or new schools with its soothing presence. A heartfelt gift for any occasion, it weaves bonds of love and nostalgia, reminding us all of the simple power of a good, old-fashioned cuddle.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 4
+      },
+      {
+        "name": "4 ⭐",
+        "count": 10
+      },
+      {
+        "name": "5 ⭐",
+        "count": 47
+      }
+    ]
   },
   {
     "toyId": 6,
@@ -69,7 +184,30 @@
     "availableQuantity": 30,
     "description": "An easy-to-fly RC helicopter with stable controls and LED lights — great for kids and beginners.",
     "pictureURL": "https://m.media-amazon.com/images/I/61QLOQh6D7L.jpg",
-    "subCategory": "Remote Control Toys"
+    "subCategory": "Remote Control Toys",
+    "longDescription": "Soar into aerial excitement with the Remote Control Helicopter, a beginner-friendly flyer equipped with intuitive controls, auto-stabilization, and dazzling LED lights that illuminate nighttime flights. Perfect for aspiring pilots, this compact chopper teaches coordination and spatial awareness as kids master hovers, loops, and gentle landings, turning backyards or living rooms into personal airfields.\n\nIts innovative gyroscopic tech ensures smooth, crash-resistant maneuvers, while rechargeable batteries provide up to 10 minutes of flight per charge, encouraging strategic play sessions. The ergonomic remote fits small hands comfortably, with adjustable speeds to grow with skill levels—from wobbly first flights to daring stunts. Durable propellers snap back into place after impacts, minimizing downtime and maximizing fun.\n\nBeyond thrills, this RC helicopter sparks interest in aviation and engineering, inspiring future inventors through hands-on experimentation with flight dynamics. It's a gateway to outdoor exploration, promoting physical activity and problem-solving in an engaging format. Whether gifting to a curious kid or hobbyist, it delivers the rush of freedom from above, creating stories of sky-high achievements and joyful descents that linger in memory.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 7
+      },
+      {
+        "name": "2 ⭐",
+        "count": 5
+      },
+      {
+        "name": "3 ⭐",
+        "count": 5
+      },
+      {
+        "name": "4 ⭐",
+        "count": 45
+      },
+      {
+        "name": "5 ⭐",
+        "count": 13
+      }
+    ]
   },
   {
     "toyId": 7,
@@ -81,7 +219,30 @@
     "availableQuantity": 90,
     "description": "A colorful 100-piece world map puzzle that teaches kids geography while improving problem-solving skills.",
     "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8BeNhnRY33i7M3dgSTiroc2TV3NrephFhQ&s",
-    "subCategory": "Educational Toys"
+    "subCategory": "Educational Toys",
+    "longDescription": "Embark on a global journey with the Puzzle World Map, a vibrant 100-piece jigsaw that pieces together continents, oceans, and landmarks in a colorful tableau of discovery. Geared toward curious minds ages 6 and up, it blends entertainment with education, sharpening puzzle-solving prowess while imprinting facts about countries, capitals, and cultures through tactile engagement.\n\nThe puzzle's thick, sturdy pieces feature easy-grip edges and a glossy finish for frustration-free assembly, with subtle icons like flags and animals adding layers of trivia to uncover. Display-ready once complete, it doubles as a wall chart for ongoing reference, reinforcing learning beyond the build. Parental guides on the box suggest discussion prompts, turning solo puzzling into interactive family quizzes.\n\nThis map isn't merely a challenge—it's a spark for worldly wonder, cultivating patience, pattern recognition, and a global perspective in young explorers. In fostering cognitive growth amid playful persistence, it equips kids with tools for lifelong learning. A thoughtful addition to study nooks or travel prep, it maps out not just the earth, but pathways to empathy and adventure.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 5
+      },
+      {
+        "name": "4 ⭐",
+        "count": 15
+      },
+      {
+        "name": "5 ⭐",
+        "count": 41
+      }
+    ]
   },
   {
     "toyId": 8,
@@ -93,7 +254,30 @@
     "availableQuantity": 45,
     "description": "A mini kitchen playset complete with utensils, pots, and pretend food for imaginative cooking play.",
     "pictureURL": "https://m.media-amazon.com/images/I/715IyLIAbpL._AC_SL1500_.jpg",
-    "subCategory": "Pretend Play"
+    "subCategory": "Pretend Play",
+    "longDescription": "Whisk up culinary dreams in the Toy Kitchen Set, a pint-sized culinary haven stocked with play pots, pans, utensils, and faux foods that mimic a real chef's domain. Aimed at budding gastronomes, this set ignites role-play scenarios from baking cookies to gourmet feasts, enhancing language skills and sequencing through step-by-step pretend recipes.\n\nCompact yet comprehensive, it includes a sink, stove, and oven with clicking knobs for authentic sounds, plus storage shelves to organize the bounty of accessories. Wooden elements ensure longevity and a premium feel, while the wipe-clean surfaces handle messy enthusiasm. Expandable with add-ons, it evolves from basic meals to themed dinner parties, keeping narratives fresh.\n\nFar from simple imitation, this kitchen cultivates independence and healthy habits, like nutrition awareness via colorful produce play. It transforms quiet corners into bustling bistros, encouraging social dining simulations that build manners and cooperation. An essential for imaginative households, it simmers creativity to a boil, serving up lessons in life laced with laughter and flavor.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 5
+      },
+      {
+        "name": "4 ⭐",
+        "count": 13
+      },
+      {
+        "name": "5 ⭐",
+        "count": 43
+      }
+    ]
   },
   {
     "toyId": 9,
@@ -105,7 +289,30 @@
     "availableQuantity": 150,
     "description": "A durable, lightweight soccer ball made for kids’ outdoor games and sports training.",
     "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGwC1-xXz91dHrnPwwGgJn4FR1Te8gxd1kw&s",
-    "subCategory": "Outdoor Toys"
+    "subCategory": "Outdoor Toys",
+    "longDescription": "Kick-start active adventures with the Soccer Ball Junior, a lightweight, bouncy sphere engineered for young athletes with its soft-touch synthetic leather and inflated grip texture. Tailored for ages 4-8, it promotes outdoor exertion through casual kickabouts or structured drills, building leg strength, balance, and team spirit on parks or pitches alike.\n\nResilient against rough play, the ball's butyl bladder maintains air pressure for consistent performance, while bold graphics enhance visibility during twilight games. Machine-stitched panels ensure even flight paths, aiding skill progression from basic passes to powerful shots. Portable and pump-compatible, it's ready for impromptu matches or practice sessions anywhere.\n\nThis ball transcends sport—it's a catalyst for healthy lifestyles, instilling discipline, resilience, and joy in movement that counters screen time. It forges friendships on the field, teaching fair play and strategy in every goal. Affordable entry to soccer's thrill, it scores big on fun, fueling passions that last a lifetime.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 7
+      },
+      {
+        "name": "2 ⭐",
+        "count": 5
+      },
+      {
+        "name": "3 ⭐",
+        "count": 6
+      },
+      {
+        "name": "4 ⭐",
+        "count": 46
+      },
+      {
+        "name": "5 ⭐",
+        "count": 11
+      }
+    ]
   },
   {
     "toyId": 10,
@@ -117,6 +324,29 @@
     "availableQuantity": 200,
     "description": "A colorful and safe baby rattle set designed to develop motor skills and auditory awareness.",
     "pictureURL": "https://www.dccbazar.com/media/catalog/product/cache/1/image/1000x/d5edbdfcc5f02245d2312018ed38af3b/5/1/51yxq_ra5yl.jpg",
-    "subCategory": "Infant Toys"
+    "subCategory": "Infant Toys",
+    "longDescription": "Delight tiny explorers with the Baby Rattle Set, a trio of ergonomically shaped, BPA-free shakers in eye-catching hues that jingle softly to captivate from the first grasp. Crafted for newborns and crawlers, each rattle targets sensory milestones—gentle vibrations for hearing, textured surfaces for touch, and bright contrasts for visual tracking—nurturing early cognitive bonds through joyful discovery.\n\nVaried in size and fill, the set offers graduated challenges: a large easy-hold for chubby fists, a ring for teething relief, and a multi-bead for rhythmic shaking, all with rounded edges to prevent mishaps. Lightweight and portable, they clip to strollers or cribs, providing on-the-go stimulation that soothes fussy moments with familiar chimes. Easy to sanitize, they're a parent's ally in milestone magic.\n\nThese rattles are more than noisemakers—they're foundational friends, sparking curiosity and cause-effect understanding in the safest way. They turn coos into giggles, laying tracks for language and coordination. A sweet starter for nursery shelves, they rattle up developmental delights, ensuring every shake brings smiles and strides toward growth.",
+    "ratings": [
+      {
+        "name": "1 ⭐",
+        "count": 8
+      },
+      {
+        "name": "2 ⭐",
+        "count": 6
+      },
+      {
+        "name": "3 ⭐",
+        "count": 4
+      },
+      {
+        "name": "4 ⭐",
+        "count": 11
+      },
+      {
+        "name": "5 ⭐",
+        "count": 46
+      }
+    ]
   }
 ]

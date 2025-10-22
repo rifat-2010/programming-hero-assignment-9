@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router";
+import { NavLink, useLoaderData } from "react-router";
 
 const PopularToySection = () => {
   const kidsData = useLoaderData();
@@ -13,7 +13,6 @@ const PopularToySection = () => {
             </span>
             <h2 className="text-4xl font-bold text-gray-800 relative">
               Popular Toys
-              
             </h2>
           </div>
           <div className="hidden md:flex items-center gap-6">
@@ -39,7 +38,7 @@ const PopularToySection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {kidsData.slice(0, 4).map((toy) => (
+        {kidsData.slice(0, 8).map((toy) => (
           <div key={toy.toyId} className="bg-white p-4 rounded-lg shadow-md">
             <img
               src={toy.pictureURL}
@@ -47,16 +46,21 @@ const PopularToySection = () => {
               className="w-full h-40 object-cover rounded-lg mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{toy.toyName}</h3>
-            <p className="text-sm text-gray-600 mb-2">
-              Seller: {toy.sellerName}
-            </p>
+            <div className="flex justify-between items-center mb-2">
+              <p className="text-sm text-gray-600">
+                Rating: ⭐ {toy.rating}
+              </p>
+              <p className="text-sm text-gray-600">
+                Stock: {toy.availableQuantity}
+              </p>
+            </div>
             <div className="flex justify-between items-center">
               <p className="font-bold text-emerald-600">${toy.price}</p>
-              <p className="text-sm">⭐ {toy.rating || "4.5"}</p>
+              <p className="text-sm text-gray-600">Seller: {toy.sellerName}</p>
             </div>
-            <button className="w-full mt-4 bg-emerald-500 text-white py-2 rounded-lg hover:bg-emerald-600">
-              View Details
-            </button>
+            <NavLink to={`/toy-Details-page/${toy.toyId}`} className="w-full h-10 flex justify-center items-center font-bold mt-4 bg-emerald-500 text-white py-2 rounded-lg hover:bg-emerald-600 transition-colors">
+              View More
+            </NavLink>
           </div>
         ))}
       </div>

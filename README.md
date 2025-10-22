@@ -4,6 +4,8 @@ Welcome to KidsCraft, a modern e-commerce platform specializing in educational a
 
 [![KidsCraft Banner](https://img.freepik.com/free-vector/font-design-word-toy-shop-with-many-toys_1308-42318.jpg?semt=ais_hybrid&w=740&q=80)](https://programming-hero-assignment-09.netlify.app/)
 
+---
+
 ## 🌐 Live Demo
 
 Experience KidsCraft live at: [https://programming-hero-assignment-09.netlify.app/](https://programming-hero-assignment-09.netlify.app/)

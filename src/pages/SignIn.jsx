@@ -1,10 +1,10 @@
 import React, { useContext, useRef, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link, Navigate, useLocation, useNavigate } from "react-router";
+import { Link, Navigate, NavLink, useLocation, useNavigate } from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { toast } from "react-toastify";
-import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { AuthContext } from "../context/AuthContext";
 
 
@@ -69,24 +69,11 @@ const handleGoogleSignIn = () => {
 
 // reset password - clicked by forget password text
  const handleForgetPassword = () => {
-  const email = emailRefHuk.current.value;
-
-  if (!email) {
-    toast.error("Please enter your email first!");
-    return;
-  }
-
-  sendPasswordResetEmail(auth, email)
-    .then(() => {
-      toast.success("Check your email to reset your password!");
-    })
-    .catch((err) => {
-      toast.error(err.message);
-    });
+ const email = emailRefHuk.current.value;
+    navigate("/Forget-password-Page", { state: { email } });
 }; 
 
 
-// console.log(user)
 
   return (
     <div className="min-h-[calc(100vh-20px)] flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-600 relative overflow-hidden">
@@ -111,6 +98,7 @@ const handleGoogleSignIn = () => {
                 type="email"
                 name="email"
                 ref={emailRefHuk}
+                required
                 // value={email}
                 // onChange={(e) => setEmail(e.target.value)}
                 placeholder="example@email.com"
@@ -126,6 +114,7 @@ const handleGoogleSignIn = () => {
                 type={show ? "text" : "password"}
                 name="password"
                 placeholder="••••••••"
+                required
                 className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <span

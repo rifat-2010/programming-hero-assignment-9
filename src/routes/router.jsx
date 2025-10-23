@@ -12,6 +12,7 @@ import ErrorPage from "../pages/ErrorPage";
 import BlogPage from "../pages/BlogPage";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import Profile from "../pages/Profile";
+import ForgetPassWordPage from "../pages/ForgetPassWordPage";
 
 
 
@@ -29,11 +30,11 @@ export const router = createBrowserRouter([
       },
       {
         path:'/about-us',
-       element: <AboutUs></AboutUs>,
+       element: <AboutUs/>,
       },
       {
         path: '/blog-page',
-       element: <BlogPage></BlogPage>,
+       element: <BlogPage/>,
       },
       {
         path: '/blog',
@@ -45,11 +46,15 @@ export const router = createBrowserRouter([
       },
       {
         path: '/signIn-page',
-       element: <SignIn></SignIn>,
+       element: <SignIn/>,
       },
       {
         path: '/signUp-page',
-       element: <SignUp></SignUp>,
+       element: <SignUp/>,
+      },
+      {
+        path: '/Forget-password-Page',
+       element: <ForgetPassWordPage/>,
       },
       {
       path: '/toy-Details-page/:id',

@@ -96,6 +96,7 @@ const handleGoogleSignIn = () => {
             <input
               type="text"
               name="name"
+              required
               placeholder="Your Name"
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
@@ -108,6 +109,7 @@ const handleGoogleSignIn = () => {
             <input
               type="email"
               name="email"
+              required
               placeholder="example@email.com"
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
@@ -120,6 +122,7 @@ const handleGoogleSignIn = () => {
             <input
               type="text"
               name="photo"
+              required
               placeholder="Your photo URL here"
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
@@ -135,6 +138,7 @@ const handleGoogleSignIn = () => {
               type={show ? "text" : "password"}
               name="password"
               placeholder="••••••••"
+              required
               className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-pink-400"
             />
             <span

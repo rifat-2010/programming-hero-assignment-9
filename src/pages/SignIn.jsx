@@ -70,6 +70,18 @@ const handleGoogleSignIn = () => {
 // reset password - clicked by forget password text
  const handleForgetPassword = () => {
  const email = emailRefHuk.current.value;
+   // 1️st : Check if email field is empty
+  if (!email) {
+    toast.error("Please enter your email before resetting password!");
+    return; // stop function
+  }
+
+  // 2️nd : Check if email format is valid
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    toast.error("Please enter a valid email address!");
+    return;
+  }
     navigate("/Forget-password-Page", { state: { email } });
 }; 
 

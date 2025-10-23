@@ -57,6 +57,8 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col md:flex-row lg:flex-row items-center justify-evenly p-4">
+      {/* page title */}
+      <title>Profile-Page</title>
       {/* user details */}
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
         {/* Header Section with Gradient */}

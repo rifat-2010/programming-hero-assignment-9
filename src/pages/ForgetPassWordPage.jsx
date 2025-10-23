@@ -8,8 +8,8 @@ import { toast } from "react-toastify";
 const ForgetPassWordPage = () => {
   const emailRef = useRef();
 const location = useLocation();
-const passedEmail = location.state?.email || "nonooooooo";
-console.log(passedEmail);
+const passedEmail = location.state?.email || "No Email";
+// console.log(passedEmail);
 
 
   const handleResetPassword = (e) => {

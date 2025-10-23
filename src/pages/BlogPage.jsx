@@ -8,6 +8,9 @@ const BlogPage = () => {
   const learningToys = "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=300&fit=crop";
     return (
        <div className="min-h-screen bg-background">
+        {/* page title */}
+        <title>Blog-Page</title>
+        
       {/* Hero Section */}
       <section data-aos="fade-right" className="relative h-[500px] md:h-[600px] overflow-hidden">
         <img

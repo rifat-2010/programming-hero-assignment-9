@@ -11,6 +11,7 @@ import Loading from "../components/Loading";
 import ErrorPage from "../pages/ErrorPage";
 import BlogPage from "../pages/BlogPage";
 import PrivateRoute from "../privateRoute/PrivateRoute";
+import Profile from "../pages/Profile";
 
 
 
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: '/blog',
         element: <BlogPage />,
+      },
+      {
+        path: '/profile-page',
+        element: <PrivateRoute><Profile/></PrivateRoute>,
       },
       {
         path: '/signIn-page',

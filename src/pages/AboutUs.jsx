@@ -3,6 +3,9 @@ import { FaChild, FaHeart, FaStar, FaLightbulb } from "react-icons/fa";
 const AboutUs = () => {
   return (
     <div className="bg-white">
+      {/* page title */}
+      <title>About-Us-Page</title>
+      
       {/* Hero Section */}
       <div data-aos="fade-left"
      data-aos-anchor="#example-anchor"

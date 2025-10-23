@@ -22,6 +22,10 @@ console.log(user)
   const emailRefHuk = useRef(null)
 
 
+  // if(user){
+  //   navigate(from)
+  //   return;
+  // }
 
   // SignIn function
   const handleSignin = (e) => {

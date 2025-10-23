@@ -1,14 +1,22 @@
 import { useParams } from "react-router";
 import { useLoaderData } from "react-router";
-import { FaStar } from "react-icons/fa";
+import { FaEye, FaStar } from "react-icons/fa";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { IoEyeOff } from "react-icons/io5";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ToyDetailsPage = () => {
   const { id } = useParams();
   const kidsData = useLoaderData();
   const toy = kidsData.find((p) => p.toyId == id);
-
+  const [show, setShow] = useState(false);
   
+  const SweetMasageField = (e) => {
+    e.preventDefault();
+    toast.success("Login Successful!");
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
         {/* page's title */}
@@ -138,7 +146,53 @@ const ToyDetailsPage = () => {
           </div>
         </div>
       </div>
+
+     
+   {/* sweetInput Field */}
+  <form onCanPlay={SweetMasageField} className="bg-purple-50 backdrop-blur-md rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-5 mx-auto mt-10">
+    <h2 className="text-black text-3xl font-bold text-center mb-4">
+      Try Now For A Sweet Masage
+    </h2>
+
+    <div>
+      <label className="block text-black font-semibold mb-1 text-[17px]">
+        Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        placeholder="example@email.com"
+        className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
+      />
     </div>
+
+    <div className="relative">
+      <label className="block text-black font-semibold mb-1 text-[17px]">
+        Password
+      </label>
+      <input
+        type={show ? "text" : "password"}
+        name="password"
+        placeholder="••••••••"
+        className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
+      />
+      <span
+        onClick={() => setShow(!show)}
+        className="absolute right-3 top-10 cursor-pointer text-white text-lg"
+      >
+        {show ? <FaEye /> : <IoEyeOff />}
+      </span>
+    </div>
+
+    <button
+      type="submit"
+      className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-lg transition duration-300"
+    >
+      Login
+    </button>
+  </form>
+</div>
+
   );
 };
 

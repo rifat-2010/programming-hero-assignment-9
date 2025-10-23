@@ -13,8 +13,8 @@ const googlePovider = new GoogleAuthProvider();
 
 const SignIn = () => {
   const [show, setShow] = useState(false);
-  const {user, setUser } = useContext(AuthContext);
-console.log(user)
+  const { setUser } = useContext(AuthContext);
+// console.log(user)
   const location = useLocation();
   const from = location.state || '/';
   const navigate = useNavigate();
@@ -32,12 +32,12 @@ console.log(user)
     e.preventDefault();
     const email = e.target.email?.value;
     const password = e.target.password?.value;
-    console.log({ email, password });
+    // console.log({ email, password });
 
     
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setUser(res.user)
         toast.success("Signup successful");
         navigate(from);
@@ -86,7 +86,7 @@ const handleGoogleSignIn = () => {
 }; 
 
 
-console.log(user)
+// console.log(user)
 
   return (
     <div className="min-h-[calc(100vh-20px)] flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-600 relative overflow-hidden">

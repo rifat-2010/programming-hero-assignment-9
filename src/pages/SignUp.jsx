@@ -1,7 +1,7 @@
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
-import { Link} from "react-router";
+import { Link, useNavigate} from "react-router";
 import { auth } from "../firebase/firebase.config";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
@@ -11,7 +11,8 @@ const googlePovider = new GoogleAuthProvider();
 
 const SignUp = () => {
   const [show, setShow] = useState(false);
-  const {setUser} = use(AuthContext);
+  // const {setUser} = use(AuthContext);
+  const Navigate = useNavigate();
 
 
 
@@ -21,7 +22,7 @@ const SignUp = () => {
     const password = e.target.password?.value;
     const displayName = e.target.name?.value;
     const photoURL = e.target.photo?.value;
-        console.log({ email, password, displayName, photoURL });
+        // console.log({ email, password, displayName, photoURL });
 
 
   // Regex for validation: at least 1 uppercase, 1 lowercase, min length 6
@@ -32,7 +33,7 @@ if (!regExp.test(password)) {
     "Password must be at least 6 characters long and include at least one uppercase and one lowercase letter"
   );
   return;
-}
+};
 
 
     createUserWithEmailAndPassword(auth, email, password)
@@ -41,15 +42,15 @@ if (!regExp.test(password)) {
           displayName, 
           photoURL,
         })
-           .then((res) => {
-                console.log(res);
+           .then(() => {
+                // console.log(res);
       
         signOut(auth)
             .then(() => {
          
               toast.success("Signup successful");
-                    setUser(null);
-                    // useNavigate('/signIn-page')
+                    // setUser(null);
+                    Navigate('/signIn-page');
             })
     })
     .catch((err) => {

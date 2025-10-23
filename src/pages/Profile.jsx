@@ -6,8 +6,8 @@ import { FaRegUser } from "react-icons/fa";
 import { AiOutlinePicture } from "react-icons/ai";
 
 const Profile = () => {
-  const { user, setUser, loading } = useContext(AuthContext);
-  console.log(loading, user);
+  const { user, setUser } = useContext(AuthContext);
+  // console.log(loading, user);
 
   // current user access
   const auth = getAuth();
@@ -20,7 +20,7 @@ const Profile = () => {
   // const photoURL = auth.currentUser.photoURL;
     const displayName = e.target.name.value;
   const photoURL = e.target.photo.value; 
-  console.log(displayName, photoURL)
+  // console.log(displayName, photoURL)
 
       e.preventDefault();
     updateProfile(auth.currentUser, {
@@ -29,7 +29,7 @@ const Profile = () => {
   })
     .then(() => {
       setUser({
-      ...auth.currentUser,
+      ...user,
       displayName,
       photoURL,
     });

@@ -10,7 +10,7 @@ import { HashLoader } from "react-spinners";
 
 const Navbar = () => {
 const {user, setUser, loading} = useContext(AuthContext);
-console.log(loading, user);
+// console.log(loading, user);
 
 
 // signOut function

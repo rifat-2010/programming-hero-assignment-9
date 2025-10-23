@@ -161,6 +161,7 @@ const ToyDetailsPage = () => {
       <input
         type="email"
         name="email"
+        required
         placeholder="example@email.com"
         className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
       />
@@ -173,6 +174,7 @@ const ToyDetailsPage = () => {
       <input
         type={show ? "text" : "password"}
         name="password"
+        required
         placeholder="••••••••"
         className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
       />
@@ -188,7 +190,7 @@ const ToyDetailsPage = () => {
       type="button"
       className="cursor-pointer w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-lg transition duration-300"
     >
-      Login
+      Try Now
     </button>
   </form>
 </div>

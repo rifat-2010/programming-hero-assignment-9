@@ -16,7 +16,8 @@ const AboutSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4">
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"  className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left Content */}
           <div className="md:w-1/2 text-white">

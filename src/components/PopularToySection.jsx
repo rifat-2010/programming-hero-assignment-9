@@ -4,7 +4,7 @@ const PopularToySection = () => {
   const kidsData = useLoaderData();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div  data-aos="fade-up" className="max-w-7xl mx-auto px-4 py-16">
       <div className="mb-16">
         <div className="flex justify-between items-end mb-8">
           <div>

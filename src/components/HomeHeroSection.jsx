@@ -2,7 +2,8 @@ import React from 'react';
 
 const HomeHeroSection = () => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="max-w-7xl mx-auto">
         <div className="min-h-[80vh] flex flex-col md:flex-row items-center justify-between py-12 px-4">
           {/* Left Side Content */}
           <div className="md:w-1/2 space-y-6">

@@ -5,7 +5,7 @@ const MostWantedProducts = () => {
   const kidsData = useLoaderData();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div  data-aos="fade-right" className="max-w-7xl mx-auto px-4 py-16">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="inline-block">
           <p className="text-emerald-500 font-medium mb-2 bg-emerald-50 px-4 py-1 rounded-full inline-block">

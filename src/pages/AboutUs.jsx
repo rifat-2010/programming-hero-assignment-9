@@ -4,7 +4,10 @@ const AboutUs = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
+      <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500" className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-6">
@@ -23,7 +26,8 @@ const AboutUs = () => {
       </div>
 
       {/* Mission Statement */}
-      <div className="py-20">
+      <div  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
@@ -63,7 +67,7 @@ const AboutUs = () => {
       </div>
 
       {/* Values Section */}
-      <div className="bg-gray-50 py-20">
+      <div  data-aos="fade-right" className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
             Our Core Values
@@ -104,7 +108,8 @@ const AboutUs = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="py-20">
+      <div data-aos="fade-up-right"
+     data-aos-anchor-placement="top-bottom" className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -128,7 +133,8 @@ const AboutUs = () => {
       </div>
 
       {/* Team Section */}
-      <div className="bg-gray-50 py-20">
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
             Meet Our Team
@@ -166,7 +172,8 @@ const AboutUs = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="bg-blue-600 text-white py-20">
+      <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className="bg-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-8">Ready to Start Shopping?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

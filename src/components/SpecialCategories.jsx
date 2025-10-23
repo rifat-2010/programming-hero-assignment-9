@@ -48,7 +48,7 @@ const SpecialCategories = () => {
   ];
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div data-aos="zoom-in-up" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

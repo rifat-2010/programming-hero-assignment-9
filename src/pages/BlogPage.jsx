@@ -1,157 +1,392 @@
 import React from 'react';
 
 const BlogPage = () => {
+    const blogHero = "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=1200&h=600&fit=crop";
+  const stemToys = "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=300&fit=crop";
+  const outdoorPlay = "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=400&h=300&fit=crop";
+  const artsCrafts = "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop";
+  const learningToys = "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=300&fit=crop";
     return (
-        <div className="font-sans bg-gradient-to-b from-primary/10 to-softpink/10 min-h-screen">
-            {/* Hero Section */}
-            <section className="py-16 px-4 md:px-8 lg:px-12 bg-gradient-to-r from-primary to-mint rounded-b-3xl shadow-md">
-                <div className="max-w-6xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-6">Playful Parenthood</h1>
-                    <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-                        Discover fun toys, creative play ideas, and expert parenting tips to make childhood magical!
-                    </p>
-                    <div className="mt-10">
-                        <div className="inline-block bg-white/30 backdrop-blur-sm rounded-full p-1 animate-bounce">
-                            {/* <i data-feather="chevron-down" className="text-white w-8 h-8"></i> */}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Featured Blogs Section */}
-            <section className="py-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
-                <h2 className="text-3xl font-bold text-center mb-12 text-accent">Featured Articles</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Blog Card 1 */}
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                        <img src="http://static.photos/toys/640x360/1" alt="Educational Toys" className="w-full h-48 object-cover"/>
-                        <div className="p-6">
-                            <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-secondary rounded-full mb-2">Learning</span>
-                            <h3 className="text-xl font-bold mb-2">Top 10 Educational Toys for Toddlers</h3>
-                            <p className="text-gray-600 mb-4">Discover toys that make learning fun and help develop essential skills.</p>
-                            <a href="#" className="text-accent font-medium flex items-center">
-                                Read More {/* <i data-feather="arrow-right" className="ml-2 w-4 h-4"></i> */}
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* Blog Card 2 */}
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                        <img src="http://static.photos/toys/640x360/2" alt="Creative Play" className="w-full h-48 object-cover"/>
-                        <div className="p-6">
-                            <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-primary rounded-full mb-2">Creativity</span>
-                            <h3 className="text-xl font-bold mb-2">Unlocking Imagination Through Play</h3>
-                            <p className="text-gray-600 mb-4">How simple toys can spark endless creative adventures for your child.</p>
-                            <a href="#" className="text-accent font-medium flex items-center">
-                                Read More {/* <i data-feather="arrow-right" className="ml-2 w-4 h-4"></i> */}
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* Blog Card 3 */}
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                        <img src="http://static.photos/toys/640x360/3" alt="Outdoor Play" className="w-full h-48 object-cover"/>
-                        <div className="p-6">
-                            <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-softpink rounded-full mb-2">Outdoors</span>
-                            <h3 className="text-xl font-bold mb-2">Best Outdoor Toys for Active Kids</h3>
-                            <p className="text-gray-600 mb-4">Get your kids moving with these fun and engaging outdoor play options.</p>
-                            <a href="#" className="text-accent font-medium flex items-center">
-                                Read More {/* <i data-feather="arrow-right" className="ml-2 w-4 h-4"></i> */}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Parenting Tips Section */}
-            <section className="py-16 px-4 md:px-8 lg:px-12 bg-white rounded-3xl shadow-inner max-w-7xl mx-auto my-12">
-                <h2 className="text-3xl font-bold text-center mb-12 text-primary">Quick Parenting Tips</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="text-center p-6 rounded-xl bg-primary/10 hover:bg-primary/20 transition-colors">
-                        <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
-                            {/* <i data-feather="clock" className="w-8 h-8"></i> */}
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2">Quality Time</h3>
-                        <p className="text-gray-600">Just 15 minutes of focused playtime daily builds stronger bonds with your child.</p>
-                    </div>
-
-                    <div className="text-center p-6 rounded-xl bg-secondary/10 hover:bg-secondary/20 transition-colors">
-                        <div className="w-16 h-16 mx-auto bg-secondary rounded-full flex items-center justify-center text-white mb-4">
-                            {/* <i data-feather="book" className="w-8 h-8"></i> */}
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2">Story Power</h3>
-                        <p className="text-gray-600">Reading together boosts vocabulary and imagination more than screen time.</p>
-                    </div>
-
-                    <div className="text-center p-6 rounded-xl bg-accent/10 hover:bg-accent/20 transition-colors">
-                        <div className="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center text-white mb-4">
-                            {/* <i data-feather="heart" className="w-8 h-8"></i> */}
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2">Emotional Growth</h3>
-                        <p className="text-gray-600">Use pretend play to help children process emotions and develop empathy.</p>
-                    </div>
-
-                    <div className="text-center p-6 rounded-xl bg-mint/20 hover:bg-mint/30 transition-colors">
-                        <div className="w-16 h-16 mx-auto bg-mint rounded-full flex items-center justify-center text-white mb-4">
-                            {/* <i data-feather="thumbs-up" className="w-8 h-8"></i> */}
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2">Positive Reinforcement</h3>
-                        <p className="text-gray-600">Praise effort over results to build resilience and a growth mindset.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Child Care Guide Section */}
-            <section className="py-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
-                <div className="bg-gradient-to-r from-secondary to-accent rounded-3xl p-8 md:p-12 text-white shadow-xl">
-                    <div className="flex flex-col md:flex-row items-center">
-                        <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                            <h2 className="text-3xl font-bold mb-4">Toy Safety Guide</h2>
-                            <p className="text-lg mb-6">Keep playtime safe and enjoyable with our essential toy safety checklist for parents.</p>
-                            <ul className="space-y-3">
-                                <li className="flex items-start">
-                                    {/* <i data-feather="check-circle" className="flex-shrink-0 mr-3 mt-1 w-5 h-5"></i> */}
-                                    <span>Check for age recommendations on packaging</span>
-                                </li>
-                                <li className="flex items-start">
-                                    {/* <i data-feather="check-circle" className="flex-shrink-0 mr-3 mt-1 w-5 h-5"></i> */}
-                                    <span>Inspect regularly for broken parts or sharp edges</span>
-                                </li>
-                                <li className="flex items-start">
-                                    {/* <i data-feather="check-circle" className="flex-shrink-0 mr-3 mt-1 w-5 h-5"></i> */}
-                                    <span>Avoid toys with small parts for children under 3</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="md:w-1/2">
-                            <img src="http://static.photos/toys/640x360/4" alt="Safe Toys" className="w-full rounded-xl shadow-lg"/>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-white p-8 rounded-2xl shadow-md">
-                        <div className="flex items-center mb-4">
-                            <div className="bg-primary/10 p-3 rounded-full mr-4">
-                                {/* <i data-feather="sun" className="text-primary w-8 h-8"></i> */}
-                            </div>
-                            <h3 className="text-xl font-bold">Creative Play Ideas</h3>
-                        </div>
-                        <p className="text-gray-600">Transform everyday items into magical toys with these simple DIY play concepts that spark imagination.</p>
-                    </div>
-
-                    <div className="bg-white p-8 rounded-2xl shadow-md">
-                        <div className="flex items-center mb-4">
-                            <div className="bg-secondary/10 p-3 rounded-full mr-4">
-                                {/* <i data-feather="shield" className="text-secondary w-8 h-8"></i> */}
-                            </div>
-                            <h3 className="text-xl font-bold">Digital Safety</h3>
-                        </div>
-                        <p className="text-gray-600">Balancing screen time with physical play for healthy development in the digital age.</p>
-                    </div>
-                </div>
-            </section>
+       <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section data-aos="fade-right" className="relative h-[500px] md:h-[600px] overflow-hidden">
+        <img
+          src={blogHero}
+          alt="Colorful toys and learning materials for children"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-secondary/30 flex items-center justify-center">
+          <div className="text-center px-6 max-w-4xl">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+              Welcome to Our Toy Blog
+            </h1>
+            <p className="text-xl md:text-2xl text-white drop-shadow-md">
+              Discover fun ideas, helpful tips, and joyful learning for your little ones
+            </p>
+          </div>
         </div>
+      </section>
+
+      {/* Featured Blogs Section */}
+      <section  data-aos="fade-up" className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Featured Stories
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Explore our latest articles on toys, learning, and creative play
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Blog Card 1 */}
+          <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img
+              src={stemToys}
+              alt="STEM toys and robot building kits for kids"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-card-foreground mb-2">
+                STEM Toys That Spark Creativity
+              </h3>
+              <p className="text-muted-foreground">
+                Discover building kits and educational toys that encourage problem-solving and innovation
+              </p>
+            </div>
+          </div>
+
+          {/* Blog Card 2 */}
+          <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img
+              src={outdoorPlay}
+              alt="Outdoor toys and sandbox play equipment"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-card-foreground mb-2">
+                Outdoor Play Ideas for Summer
+              </h3>
+              <p className="text-muted-foreground">
+                Fun outdoor activities and toys to keep kids active and engaged all season long
+              </p>
+            </div>
+          </div>
+
+          {/* Blog Card 3 */}
+          <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img
+              src={artsCrafts}
+              alt="Arts and crafts supplies for creative children"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-card-foreground mb-2">
+                Creative Arts & Crafts Projects
+              </h3>
+              <p className="text-muted-foreground">
+                Inspire imagination with colorful art supplies and easy DIY project ideas
+              </p>
+            </div>
+          </div>
+
+          {/* Blog Card 4 */}
+          <div className="bg-card rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img
+              src={learningToys}
+              alt="Educational alphabet blocks and learning puzzles"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-card-foreground mb-2">
+                Early Learning Made Fun
+              </h3>
+              <p className="text-muted-foreground">
+                Shape sorters, alphabet blocks, and toys that make learning enjoyable for toddlers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Parenting Tips Section */}
+      <section  data-aos="fade-right" className="py-16 md:py-24 px-6 bg-secondary/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Parenting Tips & Tricks
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Simple advice to make playtime meaningful and stress-free
+            </p>
+          </div>
+
+          <div  data-aos="fade-up-right" className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Tip 1 */}
+            <div className="text-center">
+              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <svg
+                  className="w-10 h-10 text-primary-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">
+                Rotate Toys Weekly
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Keep playtime exciting by rotating toys every week. It reduces clutter and helps kids rediscover old favorites.
+              </p>
+            </div>
+
+            {/* Tip 2 */}
+            <div className="text-center">
+              <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <svg
+                  className="w-10 h-10 text-accent-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">
+                Join the Play
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Spend 15 minutes daily in child-led play. Let your little one take the lead—it builds confidence and connection.
+              </p>
+            </div>
+
+            {/* Tip 3 */}
+            <div className="text-center">
+              <div className="w-20 h-20 bg-highlight rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <svg
+                  className="w-10 h-10 text-highlight-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">
+                Safe Play Zones
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Create a designated play area with soft rugs and organized storage. Safety + organization = happy parents!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Child Care Guide Section */}
+      <section data-aos="fade-up-right" className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Child Care & Toy Safety Guide
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Everything you need to know about safe play and child development
+          </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Guide Item 1 */}
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8 border-2 border-primary/20">
+            <div className="flex items-start mb-4">
+              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
+                <svg
+                  className="w-6 h-6 text-primary-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Age-Appropriate Toys
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Always check age recommendations on toy packaging. Small parts can be choking hazards for children under 3 years old.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Look for the "ASTM" safety certification</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Avoid toys with sharp edges or loose parts</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Check for non-toxic materials and paint</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Guide Item 2 */}
+          <div className="bg-gradient-to-br from-secondary/10 to-highlight/10 rounded-3xl p-8 border-2 border-secondary/20">
+            <div className="flex items-start mb-4">
+              <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
+                <svg
+                  className="w-6 h-6 text-accent-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Learning Through Play
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Play isn't just fun—it's how children develop critical skills. Choose toys that encourage exploration and creativity.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-accent mr-2">•</span>
+                    <span>Building toys boost spatial awareness</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent mr-2">•</span>
+                    <span>Pretend play develops social skills</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent mr-2">•</span>
+                    <span>Puzzles improve problem-solving abilities</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Guide Item 3 */}
+          <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-3xl p-8 border-2 border-accent/20">
+            <div className="flex items-start mb-4">
+              <div className="w-12 h-12 bg-secondary rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
+                <svg
+                  className="w-6 h-6 text-secondary-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Toy Storage & Organization
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Keep play areas tidy and toys in good condition with smart storage solutions that kids can use independently.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2">•</span>
+                    <span>Use clear bins for easy visibility</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2">•</span>
+                    <span>Label containers with pictures and words</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2">•</span>
+                    <span>Rotate toys to maintain interest</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Guide Item 4 */}
+          <div  className="bg-gradient-to-br from-highlight/10 to-secondary/10 rounded-3xl p-8 border-2 border-highlight/20">
+            <div className="flex items-start mb-4">
+              <div className="w-12 h-12 bg-highlight rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
+                <svg
+                  className="w-6 h-6 text-highlight-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Screen Time Balance
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Balance digital and physical play for healthy development. Active play is essential for growing minds and bodies.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="text-highlight-foreground mr-2">•</span>
+                    <span>Limit screen time to age-appropriate levels</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-foreground mr-2">•</span>
+                    <span>Choose educational apps and content</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-foreground mr-2">•</span>
+                    <span>Prioritize hands-on, active play daily</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
     );
 };
 

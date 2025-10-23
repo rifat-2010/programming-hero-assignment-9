@@ -14,7 +14,7 @@ const ToyDetailsPage = () => {
   
   const SweetMasageField = (e) => {
     e.preventDefault();
-    toast.success("Login Successful!");
+    toast.success("Sween alert Test Successful!");
   };
 
   return (
@@ -149,7 +149,7 @@ const ToyDetailsPage = () => {
 
      
    {/* sweetInput Field */}
-  <form onCanPlay={SweetMasageField} className="bg-purple-50 backdrop-blur-md rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-5 mx-auto mt-10">
+  <form onClick={SweetMasageField} className="bg-purple-50 backdrop-blur-md rounded-2xl shadow-xl w-full max-w-sm p-8 space-y-5 mx-auto mt-10">
     <h2 className="text-black text-3xl font-bold text-center mb-4">
       Try Now For A Sweet Masage
     </h2>
@@ -185,8 +185,8 @@ const ToyDetailsPage = () => {
     </div>
 
     <button
-      type="submit"
-      className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-lg transition duration-300"
+      type="button"
+      className="cursor-pointer w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-lg transition duration-300"
     >
       Login
     </button>

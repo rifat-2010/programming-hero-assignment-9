@@ -8,7 +8,7 @@ const Loading = () => {
         <img
           src={logo}
           alt="Rotating Logo"
-          className="w-20 h-20 animate-[spin_1s_linear_infinite]"
+          className="w-20 h-20 animate-spin"
         />
         ading<span className="text-[#9F62F2]">...</span>
       </h1>

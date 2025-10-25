@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer  data-aos="fade-up" className="bg-gradient-to-b from-blue-900 to-blue-950 text-white">
+    <footer  data-aos="fade-up" className="bg-linear-to-b from-blue-900 to-blue-950 text-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

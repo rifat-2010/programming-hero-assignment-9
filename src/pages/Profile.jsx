@@ -63,7 +63,7 @@ const Profile = () => {
       {/* user details */}
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
         {/* Header Section with Gradient */}
-        <div className="bg-gradient-to-r from-purple-500 to-purple-600 p-6 pb-16">
+        <div className="bg-linear-to-r from-purple-500 to-purple-600 p-6 pb-16">
           <img
             src={
               user?.photoURL ||

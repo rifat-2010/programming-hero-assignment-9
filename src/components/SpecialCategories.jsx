@@ -88,7 +88,7 @@ const SpecialCategories = () => {
         </div>
 
         {/* Fun Facts */}
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-10 text-white">
+        <div className="mt-20 bg-linear-to-r from-blue-600 to-purple-600 rounded-2xl p-10 text-white">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
               <div className="text-4xl font-bold">1500+</div>

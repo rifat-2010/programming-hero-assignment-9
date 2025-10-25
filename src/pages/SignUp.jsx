@@ -70,6 +70,7 @@ const handleGoogleSignIn = () => {
    .then(() => {
       // setUser(null); 
       toast.success("GoogleSignIn successful");
+      Navigate('/');
     })
     .catch((err) => {
       toast.error(err.message);
@@ -78,7 +79,7 @@ const handleGoogleSignIn = () => {
 
 
   return (
-    <div className="min-h-[calc(100vh-20px)] flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-600 relative overflow-hidden">
+    <div className="min-h-[calc(100vh-20px)] flex items-center justify-center bg-linear-to-br from-blue-500 via-indigo-600 to-purple-600 relative overflow-hidden">
            {/* page title */}
       <title>SignUp-Page</title>
 
@@ -143,7 +144,7 @@ const handleGoogleSignIn = () => {
             />
             <span
               onClick={() => setShow(!show)}
-              className="absolute right-[8px] top-[36px] cursor-pointer z-50"
+              className="absolute right-2 top-9 cursor-pointer z-50"
             >
               {show ? <FaEye /> : <IoEyeOff />}
             </span>

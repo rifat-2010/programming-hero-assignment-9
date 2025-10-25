@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const BannerSection = () => {
   return (
-    <div  data-aos="fade-up-right" className="relative py-20 mt-[20px]">
+    <div  data-aos="fade-up-right" className="relative py-20 mt-5">
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
@@ -32,9 +33,9 @@ const BannerSection = () => {
             <button className="px-8 py-4 bg-white text-indigo-900 rounded-full font-semibold hover:bg-indigo-50 transition duration-300">
               Shop Collection
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition duration-300">
+            <NavLink to={'/blog'} className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition duration-300">
               Learn More
-            </button>
+            </NavLink>
           </div>
 
           {/* Stats */}

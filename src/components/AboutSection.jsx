@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const AboutSection = () => {
   return (
@@ -70,9 +71,9 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <button className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition duration-300">
-              Learn More About Us
-            </button>
+            <NavLink to={'/about-us'} className="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition duration-300">
+              Learn More From About Us
+            </NavLink>
           </div>
 
           {/* Right Image */}

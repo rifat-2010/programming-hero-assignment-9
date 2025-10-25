@@ -148,8 +148,7 @@ const handleGoogleSignIn = () => {
 
             <button
               type="submit"
-              className="m-2 my-btn font-semibold hover:underline hover:text-white
-  "
+              className="m-2 my-btn font-semibold hover:underline hover:text-white"
             >
               Login
             </button>

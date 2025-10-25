@@ -4,6 +4,7 @@ import { getAuth, signOut, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlinePicture } from "react-icons/ai";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Profile = () => {
   const { user, setUser } = useContext(AuthContext);
@@ -118,7 +119,7 @@ const Profile = () => {
           <div className="space-y-2">
             <button className="w-full bg-purple-50 hover:bg-purple-100 text-purple-700 font-semibold py-3 px-4 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2">
               {/* <User size={18} /> */}
-              Update Profile
+              Update Profile <FaArrowRightLong />
             </button>
 
             <button

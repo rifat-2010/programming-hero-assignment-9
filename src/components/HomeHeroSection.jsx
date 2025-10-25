@@ -31,10 +31,10 @@ const HomeHeroSection = () => {
               </div>
             </div>
             <div className="flex gap-4 pt-4">
-              <button className="bg-emerald-500 text-white px-8 py-3 rounded-lg hover:bg-emerald-600 transition duration-300">
+              <button className="cursor-pointer bg-emerald-500 text-white px-8 py-3 rounded-lg hover:bg-emerald-600 transition duration-300">
                 Explore Now
               </button>
-              <button className="bg-white text-emerald-500 px-8 py-3 rounded-lg border-2 border-emerald-500 hover:bg-emerald-50 transition duration-300">
+              <button className="cursor-pointer bg-white text-emerald-500 px-8 py-3 rounded-lg border-2 border-emerald-500 hover:bg-emerald-50 transition duration-300">
                 View Collection
               </button>
             </div>

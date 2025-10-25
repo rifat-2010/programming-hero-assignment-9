@@ -1,4 +1,5 @@
 import { FaChild, FaHeart, FaStar, FaLightbulb } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const AboutUs = () => {
   return (
@@ -142,35 +143,38 @@ const AboutUs = () => {
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
             Meet Our Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl text-center">
-              <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Team member"
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold text-gray-800">Sarah Johnson</h3>
-              <p className="text-blue-600">Founder & CEO</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl text-center">
-              <img
-                src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Team member"
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold text-gray-800">Michael Chen</h3>
-              <p className="text-blue-600">Product Specialist</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl text-center">
-              <img
-                src="https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Team member"
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold text-gray-800">Emily Brown</h3>
-              <p className="text-blue-600">Customer Experience</p>
-            </div>
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div className="bg-white p-6 rounded-xl text-center">
+    <img
+      src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg"
+      alt="Elon Musk"
+      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+    />
+    <h3 className="text-xl font-bold text-gray-800">Elon Musk</h3>
+    <p className="text-blue-600">CEO of Tesla & SpaceX</p>
+  </div>
+
+  <div className="bg-white p-6 rounded-xl text-center">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTh_2eSFp5rc4mm2DuPJ8I80PwErRU-Iq7Vc3Fv-Pz9mpJrpmo2sEctmTjXVvqCLOqPec&usqp=CAU"
+      alt="Mark Zuckerberg"
+      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+    />
+    <h3 className="text-xl font-bold text-gray-800">Mark Zuckerberg</h3>
+    <p className="text-blue-600">CEO of Meta (Facebook)</p>
+  </div>
+
+  <div className="bg-white p-6 rounded-xl text-center">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Bill_Gates_2018.jpg"
+      alt="Bill Gates"
+      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+    />
+    <h3 className="text-xl font-bold text-gray-800">Bill Gates</h3>
+    <p className="text-blue-600">Co-founder of Microsoft</p>
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -178,14 +182,13 @@ const AboutUs = () => {
       <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" className="bg-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8">Ready to Start Shopping?</h2>
+          <h2 className="text-4xl font-bold mb-8">Want to read Our Blog?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Discover our amazing collection of toys and start creating wonderful
-            memories for your children.
+            On our blog, you will find essential Child Care & Toy Safety Guides, helpful Parenting Tips & Tricks, and inspiring Featured Stories.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-            Explore Our Collection
-          </button>
+          <NavLink to={'/blog'} className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors cursor-pointer">
+            Explore Our Blog-Page
+          </NavLink>
         </div>
       </div>
     </div>

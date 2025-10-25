@@ -163,7 +163,7 @@ const ToyDetailsPage = () => {
         name="email"
         required
         placeholder="example@email.com"
-        className="input input-bordered w-full bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
+        className="input input-bordered w-full bg-white/20 text-black placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-400 py-3 rounded-lg"
       />
     </div>
 

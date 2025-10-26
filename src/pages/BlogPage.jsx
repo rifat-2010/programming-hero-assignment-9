@@ -320,7 +320,7 @@ const BlogPage = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="text-highlight-foreground mr-2">•</span>
-                    <span>Limit screen time to age-appropriate levels</span>
+                    <span>Limit screen time to age-appropriate levels </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-highlight-foreground mr-2">•</span>

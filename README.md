@@ -1,14 +1,14 @@
-# KidsCraft - Educational Toy Store 🎯
+# Toy Shop - Educational Toy Store 🎯
 
-Welcome to KidsCraft, a modern e-commerce platform specializing in educational and entertaining toys for children. Our platform combines beautiful design with seamless functionality to provide an engaging shopping experience.
+Welcome to Toy Shop, a modern e-commerce platform specializing in educational and entertaining toys for children. Our platform combines beautiful design with seamless functionality to provide an engaging shopping experience.
 
-[![KidsCraft Banner](https://img.freepik.com/free-vector/font-design-word-toy-shop-with-many-toys_1308-42318.jpg?semt=ais_hybrid&w=740&q=80)](https://programming-hero-assignment-09.netlify.app/)
+[![Toy Shop Banner](https://img.freepik.com/free-vector/font-design-word-toy-shop-with-many-toys_1308-42318.jpg?semt=ais_hybrid&w=740&q=80)](https://programming-hero-assignment-09.netlify.app/)
 
 ---
 
 ## 🌐 Live Demo
 
-Experience KidsCraft live at: [https://programming-hero-assignment-09.netlify.app/](https://programming-hero-assignment-09.netlify.app/)
+Experience Toy Shop live at: [https://programming-hero-assignment-09.netlify.app/](https://programming-hero-assignment-09.netlify.app/)
 
 ## ✨ Key Features
 

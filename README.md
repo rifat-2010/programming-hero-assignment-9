@@ -89,13 +89,13 @@ eslint
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/kidcraft-toy-store.git
+   git clone https://github.com/your-username/programming-hero-assignment-9.git
    ```
 
 2. **Install dependencies**
 
    ```bash
-   cd kidcraft-toy-store
+   cd programming-hero-assignment-9
    npm install
    ```
 
@@ -124,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/your-username/kidcraft-toy-store/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/your-username/programming-hero-assignment-9/issues).
 
 ## 👨‍💻 Author
 
